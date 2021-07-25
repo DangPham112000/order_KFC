@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -19,27 +20,57 @@
 
     </header>
     <div class="order">
-        <h1>Your order form KFC</h1>
+        <h1 class="header">Your order from KFC</h1>
 
         <ul class="order-items">
-            <li class="orderitem">
-                <span>Pizza 001</span>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
 
-                <span class="quantity">
+                <span class="item-quantity">
                     <button>-</button>
                     <input type="number" value="1">
                     <button>+</button>
                 </span>
 
-                <span class="price">
+                <span class="item-price">
                     <span>$7.99</span>
                 </span>
 
-                <button>X</button>
+                <button class="btn-delete">X</button>
+            </li>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                </span>
+
+                <button class="btn-delete">X</button>
+            </li>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                </span>
+
+                <button class="btn-delete">X</button>
             </li>
         </ul>
 
-        <button>Add food</button>
+        <button id="btn-add">Add food</button>
 
         <div class="order-sumary">
             <p>Subtotal <span class="money">$15.98</span></p>
@@ -47,7 +78,7 @@
             <p>Total <span class="money">$17.98</span></p>
         </div>
 
-        <button>Checkout</button>
+        <button id="btn-checkout">Checkout</button>
     </div>
 </body>
 

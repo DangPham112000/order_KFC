@@ -21,26 +21,104 @@ header {
     position: relative;
 
     .logo {
+        height: 12rem;
         position: relative;
-        top: 5rem;
+        top: 4rem;
         background: white;
         border: 1rem solid #fff;
         border-radius: 50%;
     }
 }
 
-header img { 
-    height: 10rem;
-}
-
 .order {
-    padding: 2rem;
+    padding: 1.5rem;
     flex: 1;
     background-color: #fff;
     border-radius: 0 0 1rem 1rem;
     padding-top: 4rem;
-}
+    
+    .header {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
 
-img {
-    // display: none;
+    .order-item {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        button {
+            padding: 0.5rem;
+            width: 20px;
+            height: 20px;
+            line-height: 10px;
+            font-size: 2rem;
+
+            &.btn-delete {
+                font-size: 1rem;
+            }
+        }
+
+        .item-name {
+            flex-basis: 20rem;
+        }
+        .item-quantity {
+            flex-basis: 10rem;
+
+            input {
+                margin-left: 0.5rem;
+                width: 30px;
+                position: relative;
+                top: -2px;
+                border: none;
+            }
+        }
+
+        .item-price {
+            margin-left: auto;
+        }
+    }
+    
+    button {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #btn-add {
+        margin-top: 1.5rem;
+        border: 1px solid gray;
+        width: 18rem;
+        background-color: white;
+    }
+
+    .order-sumary {
+        padding: 1rem 1.5rem;
+        margin: 2rem 0;
+        background-color: #f4f4f4;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+
+        .money {
+            float: right;
+        }
+    }
+
+
+
+    #btn-checkout {
+        width: 100%;
+        background-color: #ff6144;
+        color: white;
+    }
 }
